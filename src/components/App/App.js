@@ -1,13 +1,16 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
+import Search from '../Search/Search';
 
 function App() {
+const [search, setSearch] = useState();
   return (
+    
     <div className="App">
-      <header className="App-header">
-      
-      </header>
-    </div>
+        <h1>Next Movie</h1>
+        <Search />
+   </div>
+    
   );
 }
 

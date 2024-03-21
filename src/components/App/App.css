@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html, body, #root {
+  height: 100%;
+  background-image: url(./dmitriy-galanov-UKGk5f1d8_0-unsplash\ \(1\).jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-attachment: fixed;
+}
+
+
 .App {
-  background-color: white;
+  height: 100%;
+
+  padding: 10px;
+  /* border: solid red; */
+  /* overflow-y: scroll; */
+}
+
+
+h1 {
+  color: white;
+  font-size: 40px;
+  width: 120px;
+  padding: 10px;
+  border: solid 1px black;
+  margin: 0;
 }
