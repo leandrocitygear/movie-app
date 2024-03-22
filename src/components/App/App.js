@@ -1,14 +1,19 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Search from '../Search/Search';
+import MovieCard from '../MovieCard/MovieCard';
+
 
 function App() {
-const [search, setSearch] = useState();
+
+const [term, setTerm] = useState([]);
+
   return (
     
     <div className="App">
-        <h1>Next Movie</h1>
+        <h1 className="logo">Next Movie</h1>
         <Search />
+        <MovieCard />
    </div>
     
   );

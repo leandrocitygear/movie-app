@@ -1,8 +1,8 @@
 .searchBar {
     /* border: solid blue; */
     width: 410px;
-    left: 40%;
-    top: 10px;
+    left: 35%;
+    top: 40px;
     /* height: 40px; */
     position: absolute;
 }
@@ -13,7 +13,7 @@ input {
     letter-spacing: 1px;
     padding: 13px 20px 13px;
     outline: 0;
-    border: 1px solid black;
+    border: 1px solid white;
     color: white;
     background-color: rgba(0, 0, 0, 0);
 }
@@ -21,14 +21,19 @@ input {
 
 button {
     font-size: 16px;
-    font-weight: 200;
+    /* font-weight: 400; */
     letter-spacing: 1px;
     padding: 13px 20px 13px;
     outline: 0;
-    border: 1px solid black;
-    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    color: white;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
+  }
+
+  button:hover {
+    border: solid 1px black;
+    color: black;
   }
   
   

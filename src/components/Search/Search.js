@@ -5,7 +5,7 @@ function Search() {
     return (
         <div className="searchBar">
             <form>
-                <input placeholder="What do you wanna go see next" />
+                <input placeholder="Whats Next" />
                 <button>Search</button>
             </form>
         </div>
