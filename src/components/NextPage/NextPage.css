@@ -1,0 +1,20 @@
+.NextButton {
+    font-size: 16px;
+    /* font-weight: 400; */
+    letter-spacing: 1px;
+    width: 100px;
+    padding: 13px 8px 13px;
+    outline: 0;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    top: 80px;
+    right: 10px;
+    position: absolute;
+}
+
+.NextButton:hover {
+    border: solid 1px black;
+    backdrop-filter: sepia(100%);
+}

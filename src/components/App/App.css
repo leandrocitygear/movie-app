@@ -19,6 +19,7 @@ html, body, #root {
   background-repeat:no-repeat;
   background-position:center;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 
@@ -27,7 +28,7 @@ html, body, #root {
 
   padding: 10px;
   /* border: solid red; */
-  /* overflow-y: scroll; */
+  /* overflow: ; */
 }
 
 

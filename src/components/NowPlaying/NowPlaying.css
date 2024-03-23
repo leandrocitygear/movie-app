@@ -1,0 +1,20 @@
+.NowButton {
+    font-size: 16px;
+    /* font-weight: 400; */
+    letter-spacing: 1px;
+    width: 150px;
+    padding: 13px 8px 13px;
+    outline: 0;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    top: 80px;
+    right: 1000px;
+    position: absolute;
+}
+
+.NowButton:hover {
+    border: solid 1px black;
+    backdrop-filter: sepia(100%);
+}

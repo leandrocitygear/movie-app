@@ -2,7 +2,7 @@
     /* border: solid blue; */
     width: 410px;
     left: 35%;
-    top: 40px;
+    top: 20px;
     /* height: 40px; */
     position: absolute;
 }
@@ -19,7 +19,7 @@ input {
 }
 
 
-button {
+.Search {
     font-size: 16px;
     /* font-weight: 400; */
     letter-spacing: 1px;
@@ -31,14 +31,14 @@ button {
     background-color: rgba(0, 0, 0, 0);
   }
 
-  button:hover {
+  .Search:hover {
     border: solid 1px black;
-    color: black;
+    backdrop-filter: sepia(100%);
   }
   
   
   @media (min-width: 768px) {
-    button {
+    .Search {
       padding: 13px 50px 13px;
     }
   }
