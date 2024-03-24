@@ -6,7 +6,7 @@ function NextPage({onNextPageClick}) {
 
   return (
     <div className='NextPage'>
-        <button className='NextButton' onClick={onNextPageClick}>Next</button>
+        <button className='NextButton' onClick={onNextPageClick} >Next</button>
 
     </div>
   )
