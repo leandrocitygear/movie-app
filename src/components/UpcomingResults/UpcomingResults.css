@@ -1,0 +1,33 @@
+.posters {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+}
+
+.card {
+display: inline-block;
+/* border: solid black; */
+/* backdrop-filter: blur(2px); */
+text-align: center;
+width: 250px;
+height: 400px;
+margin: 30px;
+overflow: hidden;
+}
+
+.UpcomingResults {
+ border: solid 2px white;
+ height: 500px;
+ overflow-y: scroll;
+ margin-top: 10px;
+ text-align: center;
+}
+
+.UpcomingResults::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    color:white;
+    /* text-align: justify; */
+}
