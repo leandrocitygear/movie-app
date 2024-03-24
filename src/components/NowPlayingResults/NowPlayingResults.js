@@ -13,11 +13,12 @@ function NowPlayingResults({ nowPlayingMovies }) {
     return (
 
 <div className="NowPlayingResults">
+  <h1 className="label">Movies Now Playing</h1>
       {nowPlayingMovies.map((movie) => (
           <div className="card" key={movie.id}>
             <img className="posters" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
             <p>{movie.title}</p>
-            <p>Release Date: {movie.release_date}</p>
+            
             
           </div>
         ))}

@@ -1,11 +1,11 @@
 import React from 'react'
 import './PrevPage.css'
 
-function PrevPage() {
+function PrevPage({onPrevPageClick}) {
 
   return (
     <div className='PrevPage'>
-        <button className='PrevButton'>Previous</button>
+        <button className='PrevButton' onClick={onPrevPageClick}>Previous</button>
 
     
     </div>

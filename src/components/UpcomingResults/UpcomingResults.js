@@ -11,7 +11,8 @@ if (!upcomingMovies || upcomingMovies.length === 0) {
 
     return (
     
-        <div className="UpcomingResults"> Movies Coming Soon
+        <div className="UpcomingResults"> 
+        <h1 className="label">Movies Coming Soon</h1>
        {upcomingMovies.map((movie) => (
           <div className="card" key={movie.id}>
             <img className="posters" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />

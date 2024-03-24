@@ -1,12 +1,12 @@
 import React from 'react';
 import './NextPage.css';
 
-function NextPage() {
+function NextPage({onNextPageClick}) {
 
 
   return (
     <div className='NextPage'>
-        <button className='NextButton'>Next</button>
+        <button className='NextButton' onClick={onNextPageClick}>Next</button>
 
     </div>
   )
