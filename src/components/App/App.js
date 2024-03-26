@@ -109,6 +109,9 @@ function App() {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
   };
 
+  const handleGoBack = () => {
+    window.location.reload(); // Reload the page
+  };
 
   return (
     <div className="App">
@@ -126,6 +129,7 @@ function App() {
           {showNowPlaying ? (
             <>
               <NowPlayingResults nowPlayingMovies={nowPlayingMovies} />
+              <h1 className="label1">Movies Now Playing</h1>
               <button className="ComingButton" onClick={handleToggleClick}>
                 Coming Soon
               </button>
@@ -150,6 +154,8 @@ function App() {
         <>
           <button className="Sprev" onClick={handlePrevSearchPageClick}>Previous</button>
           <button className="Snext" onClick={handleNextSearchPageClick}>Next</button>
+          <button onClick={handleGoBack} className="goBackButton">Go back</button>
+          
         </>
       )}
     </div>

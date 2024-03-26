@@ -2,12 +2,17 @@
     width: 200px;
     height: 300px;
     margin: 10px;
+    cursor: pointer;
+}
+
+.posters:hover {
+    transform: scale(1.07);
+    transition-duration: 300ms;
 }
 
 .card {
 display: inline-block;
-/* border: solid black; */
-/* backdrop-filter: blur(2px); */
+border: solid black;
 text-align: center;
 width: 250px;
 height: 400px;
@@ -29,10 +34,9 @@ overflow: hidden;
 
 p {
     color:white;
-    /* text-align: justify; */
 }
 
-.label {
+.label1 {
     font-size: 16px;
     letter-spacing: 1px;
     width: 210px;
@@ -59,13 +63,40 @@ p {
     /* border: solid red; */
     margin: 0;
     z-index: 9;
-
-}
+} 
 
 .trailer-container iframe {
-    /* position: relative; */
-    /* max-width: 900px; */
-    /* top:-500px; */
-    /* outline: 0; */
-    /* box-shadow: 0 0 10px 10px rgba(255, 255, 255, .4); */
+    position: relative;
+    max-width: 900px;
+    outline: 0;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, .4);
 }
+
+.trailer-container .closeButton {
+    position: absolute;
+    top: 30px;
+    right: 30px; 
+    max-width: 35px;
+    cursor: pointer;
+    z-index: 9;
+    font-size: 40px;
+    color: white;
+
+}
+
+@media (max-width: 450px) {
+    .NowPlayingResults {
+      position: absolute;
+      top: 280px;
+      width: 368px;
+      height: 580px;
+    }
+  }
+
+  @media (max-width: 450px) {
+     .label1 {
+        top: 150px;
+        left: 80px;
+        padding: 13px 5px 13px;
+    }
+  }

@@ -19,3 +19,9 @@
     color: color;
     backdrop-filter: sepia(100%);
 }
+
+@media (max-width: 450px) {
+    .PrevButton {
+      top: 1110px;
+   }
+  }

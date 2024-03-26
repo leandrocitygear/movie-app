@@ -18,3 +18,9 @@
     border: solid 1px black;
     backdrop-filter: sepia(100%);
 }
+
+@media (max-width: 450px) {
+    .NextButton {
+      top: 1110px;
+   }
+  }

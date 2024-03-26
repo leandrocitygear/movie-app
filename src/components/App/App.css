@@ -41,11 +41,9 @@ html, body, #root {
 }
 
 .searchBar {
-  /* border: solid blue; */
   width: 410px;
   left: 35%;
   top: 20px;
-  /* height: 40px; */
   position: absolute;
 }
 
@@ -63,7 +61,6 @@ input {
 
 .Search {
   font-size: 16px;
-  /* font-weight: 400; */
   letter-spacing: 1px;
   padding: 13px 20px 13px;
   outline: 0;
@@ -78,12 +75,6 @@ input {
   backdrop-filter: sepia(100%);
 }
 
-
-@media (min-width: 768px) {
-  .Search {
-    padding: 13px 50px 13px;
-  }
-}
 
 
 .ComingButton{
@@ -128,3 +119,45 @@ input {
 }
 
 
+@media (max-width: 390px) {
+  .Search {
+    padding: 13px 5px 13px;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .ComingButton {
+    top: 230px;
+    right: 230px;
+    position: absolute;
+ }
+}
+
+@media (max-width: 450px) {
+  .NowButton {
+    top: 230px;
+    right: 230px;
+    position: absolute;
+ }
+}
+
+@media (max-width: 450px) {
+  .searchBar {
+    top: 90px;
+    left: 55px;
+    width: 290px;
+ }
+}
+
+@media (max-width: 450px) {
+  input {
+  padding: 13px 2px 13px;
+ }
+}
+
+@media (max-width: 450px) {
+  .logo {
+    width: 250px;
+  }
+}

@@ -2,6 +2,12 @@
     width: 200px;
     height: 300px;
     margin: 10px;
+    cursor: pointer;
+}
+
+.posters:hover {
+    transform: scale(1.07);
+    transition-duration: 300ms;
 }
 
 .card {
@@ -109,3 +115,68 @@ p {
     color: color;
     backdrop-filter: sepia(100%);
 }
+
+.trailer-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top:0;
+    left: 0;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, .8);
+    /* border: solid red; */
+    margin: 0;
+    z-index: 9;
+} 
+
+.trailer-container iframe {
+    position: relative;
+    max-width: 900px;
+    outline: 0;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, .4);
+}
+
+.trailer-container .closeButton {
+    position: absolute;
+    top: 30px;
+    right: 30px; 
+    max-width: 35px;
+    cursor: pointer;
+    z-index: 9;
+    font-size: 40px;
+    color: white;
+
+}
+
+@media (max-width: 450px) {
+    .Snext {
+      top: 1110px;
+   }
+  }
+
+  @media (max-width: 450px) {
+    .Sprev {
+      top: 1110px;
+   }
+  }
+
+
+  @media (max-width: 450px) {
+    .SearchResults {
+      position: absolute;
+      top: 280px;
+      width: 525px;
+      height: 700px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .goBackButton {
+      top: 230px;
+      right: 230px;
+   }
+  }
+
+  
