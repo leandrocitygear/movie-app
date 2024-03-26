@@ -12,8 +12,6 @@
 
 .card {
 display: inline-block;
-/* border: solid black; */
-/* backdrop-filter: blur(2px); */
 text-align: center;
 width: 250px;
 height: 400px;
@@ -35,10 +33,9 @@ overflow: hidden;
 
 p {
     color:white;
-    /* text-align: justify; */
 }
 
-.label {
+.label3 {
     font-size: 16px;
     letter-spacing: 1px;
     width: 210px;
@@ -74,7 +71,6 @@ p {
 
 .Snext {
     font-size: 16px;
-    /* font-weight: 400; */
     letter-spacing: 1px;
     width: 100px;
     padding: 13px 8px 13px;
@@ -96,7 +92,6 @@ p {
 
 .Sprev {
     font-size: 16px;
-    /* font-weight: 400; */
     letter-spacing: 1px;
     width: 100px;
     padding: 13px 8px 13px;
@@ -126,7 +121,6 @@ p {
     left: 0;
     height: 100%; 
     background-color: rgba(0, 0, 0, .8);
-    /* border: solid red; */
     margin: 0;
     z-index: 9;
 } 
@@ -147,28 +141,29 @@ p {
     z-index: 9;
     font-size: 40px;
     color: white;
-
 }
 
 @media (max-width: 450px) {
     .Snext {
-      top: 1110px;
+        top: 785px;
+        right: 65px;
    }
   }
 
   @media (max-width: 450px) {
     .Sprev {
-      top: 1110px;
+        top: 785px;
+        right: 230px;
    }
   }
 
 
   @media (max-width: 450px) {
     .SearchResults {
-      position: absolute;
-      top: 280px;
-      width: 525px;
-      height: 700px;
+        position: absolute;
+        top: 280px;
+        width: 94%;
+        height: 480px;
     }
   }
 
@@ -179,4 +174,25 @@ p {
    }
   }
 
-  
+  @media (max-width: 450px) {
+    .label3 {
+       top: 150px;
+       left: 80px;
+       padding: 13px 5px 13px;
+       text-align: center;
+   }
+ }
+
+ @media (max-width: 450px) {
+    .trailer-container {
+        position: fixed;
+   }
+ }
+
+ @media (max-width: 450px) {
+    .trailer-container iframe {
+        position: relative;
+        width: 85%;
+        height: 30%;
+   }
+ }

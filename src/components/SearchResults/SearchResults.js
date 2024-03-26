@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import './SearchResults.css'
 
 const SearchResults = ({searchResults}) => {
-    console.log("Received Search Results:", searchResults);
 
     const [selectedMovie, setSelectedMovie] = useState(null);
 
@@ -34,7 +33,6 @@ const SearchResults = ({searchResults}) => {
 
   return (
     <div className='SearchResults'>
-        {/* <h1 className="label">Search Results</h1> */}
        {searchResults.map((movie) => (
           <div className="card" key={movie.id} onClick={() => handleCardClick(movie.id)}>
             <img className="posters" src={movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : 'https://www.csaff.org/wp-content/uploads/csaff-no-poster.jpg' } alt={movie.title}/>

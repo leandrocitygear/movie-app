@@ -21,13 +21,12 @@ function UpcomingResults({ upcomingMovies}) {
   };
 
 if (!upcomingMovies || upcomingMovies.length === 0) {
-    return null; // Render a message if no data is available
+    return null; 
   }
 
     return (
     
         <div className="UpcomingResults"> 
-        {/* <h1 className="label">Movies Coming Soon</h1> */}
        {upcomingMovies.map((movie) => (
           <div className="card" key={movie.id} onClick={() => handleCardClick(movie.id)}>
             <img className="posters" src={movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : 'https://www.csaff.org/wp-content/uploads/csaff-no-poster.jpg' } alt={movie.title}/>

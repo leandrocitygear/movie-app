@@ -25,10 +25,7 @@ html, body, #root {
 
 .App {
   height: 100%;
-
   padding: 10px;
-  /* border: solid red; */
-  /* overflow: ; */
 }
 
 
@@ -58,7 +55,6 @@ input {
   background-color: rgba(0, 0, 0, 0);
 }
 
-
 .Search {
   font-size: 16px;
   letter-spacing: 1px;
@@ -74,8 +70,6 @@ input {
   border: solid 1px black;
   backdrop-filter: sepia(100%);
 }
-
-
 
 .ComingButton{
   font-size: 16px;
@@ -99,7 +93,6 @@ input {
 
 .NowButton {
   font-size: 16px;
-  /* font-weight: 400; */
   letter-spacing: 1px;
   width: 150px;
   padding: 13px 8px 13px;
@@ -118,13 +111,11 @@ input {
   backdrop-filter: sepia(100%);
 }
 
-
 @media (max-width: 390px) {
   .Search {
     padding: 13px 5px 13px;
   }
 }
-
 
 @media (max-width: 450px) {
   .ComingButton {
@@ -146,7 +137,7 @@ input {
   .searchBar {
     top: 90px;
     left: 55px;
-    width: 290px;
+    width: 315px;
  }
 }
 

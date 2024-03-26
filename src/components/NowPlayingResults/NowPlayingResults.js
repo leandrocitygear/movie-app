@@ -20,7 +20,7 @@ function NowPlayingResults({ nowPlayingMovies }) {
   };
 
   if (!nowPlayingMovies || nowPlayingMovies.length === 0) {
-    return null; // Return null when there are no movies to render
+    return null; 
   }
 
   return (

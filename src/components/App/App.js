@@ -13,9 +13,9 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const [term, setTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-  const [searchCurrentPage, setSearchCurrentPage] = useState(1); // State for search results page
+  const [searchCurrentPage, setSearchCurrentPage] = useState(1); 
 
-  // Function to fetch now playing movies
+  
   const fetchNowPlayingMovies = async (page) => {
     const response = await fetch(
       `https://api.themoviedb.org/3/movie/now_playing?api_key=29a5360b3d6d05d01218ccd685d1210f&language=en-US&page=${page}&region=US`
@@ -24,7 +24,6 @@ function App() {
     return data.results;
   };
 
-  // Function to fetch upcoming movies
   const fetchUpcomingMovies = async (page) => {
     const response = await fetch(
       `https://api.themoviedb.org/3/movie/upcoming?api_key=29a5360b3d6d05d01218ccd685d1210f&language=en-US&page=${page}&region=US`
@@ -36,15 +35,11 @@ function App() {
   const handleSearch = (e) => {
     e.preventDefault();
 
-    // Construct the API URL with the search term
     const apiSearch = `https://api.themoviedb.org/3/search/movie?api_key=29a5360b3d6d05d01218ccd685d1210f&query=${term}&include_adult=false&language=en-US&page=1`;
-
-    console.log("API URL:", apiSearch); // Log the constructed API URL
 
     fetch(apiSearch)
       .then(response => response.json())
       .then(json => {
-        console.log("API Response:", json); // Log the API response
         setSearchResults(json.results);
       })
       .catch(error => {
@@ -77,10 +72,9 @@ function App() {
   }, [showNowPlaying, currentPage]);
 
   useEffect(() => {
-    // Handle search results pagination
-    // This effect should execute whenever searchCurrentPage changes
+    
     const handleSearchPagination = () => {
-      // Perform search API call for the new page
+
       const apiSearch = `https://api.themoviedb.org/3/search/movie?api_key=29a5360b3d6d05d01218ccd685d1210f&query=${term}&include_adult=false&language=en-US&page=${searchCurrentPage}`;
 
       fetch(apiSearch)
@@ -93,8 +87,8 @@ function App() {
         });
     };
 
-    handleSearchPagination(); // Call the pagination function
-  }, [searchCurrentPage, term]); // Depend on searchCurrentPage and term
+    handleSearchPagination(); 
+  }, [searchCurrentPage, term]); 
 
   const handleToggleClick = () => {
     setShowNowPlaying(!showNowPlaying);
@@ -110,7 +104,7 @@ function App() {
   };
 
   const handleGoBack = () => {
-    window.location.reload(); // Reload the page
+    window.location.reload();
   };
 
   return (
@@ -137,6 +131,7 @@ function App() {
           ) : (
             <>
               <UpcomingResults upcomingMovies={upcomingMovies} />
+              <h1 className="label2">Movies Coming Soon</h1>
               <button className="NowButton" onClick={handleToggleClick}>
                 Now Playing
               </button>
@@ -150,11 +145,12 @@ function App() {
           )}
         </>
       )}
-      {searchResults.length > 0 && ( // Render search pagination buttons only when there are search results
+      {searchResults.length > 0 && (
         <>
           <button className="Sprev" onClick={handlePrevSearchPageClick}>Previous</button>
           <button className="Snext" onClick={handleNextSearchPageClick}>Next</button>
           <button onClick={handleGoBack} className="goBackButton">Go back</button>
+          <h1 className="label3">Search Results</h1>
           
         </>
       )}
