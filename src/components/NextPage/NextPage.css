@@ -8,9 +8,10 @@
     color: white;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
-    top: 80px;
-    right: 10px;
+    top: 12.5%;
+    right: 0.7%;
     position: absolute;
+    text-align: center;
 }
 
 .NextButton:hover {
@@ -20,8 +21,8 @@
 
 @media (max-width: 450px) {
     .NextButton {
-      top: 785px;
-      right: 65px;
+      top: 89.7%;
+      right: 3%;
    }
   }
 

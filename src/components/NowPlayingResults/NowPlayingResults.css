@@ -21,9 +21,9 @@ overflow: hidden;
 
 .NowPlayingResults {
  border: solid 2px white;
- height: 500px;
+ height: 78%;
  overflow-y: scroll;
- margin-top: 10px;
+ margin-top: 0.74%;
  text-align: center;
 }
 
@@ -46,7 +46,8 @@ p {
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     left: 42%;
-    top: 80px;
+    top: 12.5%;
+    text-align: center;
 }
 
 .trailer-container {
@@ -84,18 +85,17 @@ p {
 @media (max-width: 450px) {
     .NowPlayingResults {
       position: absolute;
-      top: 280px;
+      top: 32%;
       width: 94%;
-      height: 480px;
+      height: 56%;
     }
   }
 
   @media (max-width: 450px) {
      .label1 {
-        top: 150px;
-        left: 80px;
+        top: 17.6%;
+        left: 21%;
         padding: 13px 5px 13px;
-        text-align: center;
     }
   }
 

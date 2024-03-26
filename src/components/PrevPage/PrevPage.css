@@ -8,9 +8,10 @@
     color: white;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
-    top: 80px;
-    right: 115px;
+    top: 12.5%;
+    right: 8.4%;
     position: absolute;
+    text-align: center;
 }
 
 .PrevButton:hover {
@@ -21,7 +22,7 @@
 
 @media (max-width: 450px) {
     .PrevButton {
-      top: 785px;
-      right: 230px;
+        top: 89.7%;
+      right: 71.5%;
    }
   }

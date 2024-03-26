@@ -21,9 +21,9 @@ overflow: hidden;
 
 .SearchResults {
  border: solid 2px white;
- height: 500px;
+ height: 78%;
  overflow-y: scroll;
- margin-top: 10px;
+ margin-top: 0.74%;
  text-align: center;
 }
 
@@ -46,7 +46,8 @@ p {
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     left: 42%;
-    top: 80px;
+    top: 12.5%;
+    text-align: center;
 }
 
 .goBackButton{
@@ -59,8 +60,8 @@ p {
     color: white;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
-    top: 80px;
-    right: 1000px;
+    top: 12.5%;
+  right: 73.2%;
     position: absolute;
 }
 
@@ -79,9 +80,10 @@ p {
     color: white;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
-    top: 80px;
-    right: 10px;
+    top: 12.5%;
+    right: 0.7%;
     position: absolute;
+    text-align: center;
 }
 
 .Snext:hover {
@@ -100,9 +102,10 @@ p {
     color: white;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
-    top: 80px;
-    right: 115px;
+    top: 12.5%;
+    right: 8.4%;
     position: absolute;
+    text-align: center;
 }
 
 .Sprev:hover {
@@ -145,41 +148,40 @@ p {
 
 @media (max-width: 450px) {
     .Snext {
-        top: 785px;
-        right: 65px;
+        top: 89.7%;
+      right: 3%;
    }
   }
 
   @media (max-width: 450px) {
     .Sprev {
-        top: 785px;
-        right: 230px;
-   }
+        top: 89.7%;
+      right: 71.5%;
   }
+}
 
 
   @media (max-width: 450px) {
     .SearchResults {
         position: absolute;
-        top: 280px;
-        width: 94%;
-        height: 480px;
+        top: 32%;
+      width: 94%;
+      height: 56%;
     }
   }
 
   @media (max-width: 450px) {
     .goBackButton {
-      top: 230px;
-      right: 230px;
+        top: 26%;
+        right: 59%;
    }
   }
 
   @media (max-width: 450px) {
     .label3 {
-       top: 150px;
-       left: 80px;
+        top: 17.6%;
+        left: 21%;
        padding: 13px 5px 13px;
-       text-align: center;
    }
  }
 
