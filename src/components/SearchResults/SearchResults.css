@@ -61,7 +61,7 @@ p {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
     top: 12.5%;
-  right: 73.2%;
+    left: 16%;
     position: absolute;
 }
 
@@ -149,14 +149,15 @@ p {
 @media (max-width: 450px) {
     .Snext {
         top: 89.7%;
-      right: 3%;
+      right: 2.5%;
    }
   }
 
   @media (max-width: 450px) {
     .Sprev {
         top: 89.7%;
-      right: 71.5%;
+        right: none;
+        left: 2.5%;
   }
 }
 
@@ -173,7 +174,7 @@ p {
   @media (max-width: 450px) {
     .goBackButton {
         top: 26%;
-        right: 59%;
+        left: 2.5%;
    }
   }
 

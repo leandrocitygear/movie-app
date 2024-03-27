@@ -23,6 +23,7 @@
 @media (max-width: 450px) {
     .PrevButton {
         top: 89.7%;
-      right: 71.5%;
+      right: none;
+      left: 2.5%;
    }
   }

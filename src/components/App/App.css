@@ -81,7 +81,7 @@ input {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   top: 12.5%;
-  right: 73.2%;
+  left: 16%;
   position: absolute;
 }
 
@@ -101,7 +101,7 @@ input {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   top: 12.5%;
-  right: 73.2%;
+  left: 16%;
   position: absolute;
 }
 
@@ -114,7 +114,7 @@ input {
 @media (max-width: 450px) {
   .ComingButton {
     top: 26%;
-    right: 59%;
+    left: 2.5%;
     position: absolute;
  }
 }
@@ -122,7 +122,7 @@ input {
 @media (max-width: 450px) {
   .NowButton {
     top: 26%;
-    right: 59%;
+    left: 2.5%;
     position: absolute;
  }
 }
@@ -131,7 +131,8 @@ input {
   .searchBar {
     top: 10%;
     left: 10%;
-    width: 81%;
+    width: 74%;
+    border: solid red;
  }
 }
 
