@@ -39,7 +39,7 @@ html, body, #root {
 
 .searchBar {
   width: 27%;
-  left: 35%;
+  left: 38%;
   top: 2.95%;
   position: absolute;
 }
@@ -130,7 +130,7 @@ input {
 @media (max-width: 450px) {
   .searchBar {
     top: 10%;
-    left: 10%;
+    left: 14.2%;
     width: 74%;
  }
 }
