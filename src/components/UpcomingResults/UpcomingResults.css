@@ -21,7 +21,7 @@ overflow: hidden;
 
 .UpcomingResults {
     border: solid 2px white;
-    height: 78%;
+    height: 500px;
     overflow-y: scroll;
     margin-top: 0.74%;
     text-align: center;
