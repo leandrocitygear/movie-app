@@ -14,6 +14,7 @@ function App() {
   const [term, setTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [searchCurrentPage, setSearchCurrentPage] = useState(1); 
+  const [forceRerender, setForceRerender] = useState(false);
 
   
   const fetchNowPlayingMovies = async (page) => {
@@ -53,10 +54,12 @@ function App() {
 
   const handleNextSearchPageClick = () => {
     setSearchCurrentPage((prevPage) => prevPage + 1);
+    setForceRerender(prev => !prev);
   };
 
   const handlePrevSearchPageClick = () => {
     setSearchCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+    setForceRerender(prev => !prev);
   };
 
   useEffect(() => {
@@ -97,15 +100,19 @@ function App() {
 
   const handleNextPageClick = () => {
     setCurrentPage((prevPage) => prevPage + 1);
+    setForceRerender(prev => !prev);
   };
 
   const handlePrevPageClick = () => {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+    setForceRerender(prev => !prev);
   };
 
   const handleGoBack = () => {
     window.location.reload();
   };
+
+  
 
   return (
     <div className="App">
@@ -117,12 +124,12 @@ function App() {
         </form>
       </div>
       {searchResults.length > 0 ? (
-        <SearchResults searchResults={searchResults} />
+        <SearchResults key={forceRerender ? 'forceRerender' : 'normal'} searchResults={searchResults} />
       ) : (
         <>
           {showNowPlaying ? (
             <>
-              <NowPlayingResults nowPlayingMovies={nowPlayingMovies} />
+              <NowPlayingResults key={forceRerender ? 'forceRerender' : 'normal'} nowPlayingMovies={nowPlayingMovies} />
               <h1 className="label1">Movies Now Playing</h1>
               <button className="ComingButton" onClick={handleToggleClick}>
                 Coming Soon
@@ -130,7 +137,7 @@ function App() {
             </>
           ) : (
             <>
-              <UpcomingResults upcomingMovies={upcomingMovies} />
+              <UpcomingResults key={forceRerender ? 'forceRerender' : 'normal'} upcomingMovies={upcomingMovies} />
               <h1 className="label2">Movies Coming Soon</h1>
               <button className="NowButton" onClick={handleToggleClick}>
                 Now Playing
