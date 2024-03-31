@@ -41,7 +41,7 @@ html, body, #root {
 .searchBar {
   width: 27%;
   left: 38%;
-  top: 2.95%;
+  top: 19px;
   position: absolute;
 }
 
@@ -81,7 +81,7 @@ input {
   color: white;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
-  top: 12.5%;
+  top: 80px;
   left: 16%;
   position: absolute;
 }
@@ -101,7 +101,7 @@ input {
   color: white;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
-  top: 12.5%;
+  top: 80px;
   left: 16%;
   position: absolute;
 }
