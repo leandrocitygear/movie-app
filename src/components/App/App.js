@@ -113,8 +113,6 @@ function App() {
     window.location.reload();
   };
 
-  
-
   return (
     <div className="App">
       <h1 className="logo">Next Movie</h1>
