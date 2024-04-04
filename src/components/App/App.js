@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import UpcomingResults from '../UpcomingResults/UpcomingResults';
@@ -19,7 +20,7 @@ function App() {
   
   const fetchNowPlayingMovies = async (page) => {
     const response = await fetch(
-      `https://api.themoviedb.org/3/movie/now_playing?api_key=29a5360b3d6d05d01218ccd685d1210f&language=en-US&page=${page}&region=US`
+      `https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_KEY}&language=en-US&page=${page}&region=US`
     );
     const data = await response.json();
     return data.results;
@@ -27,7 +28,7 @@ function App() {
 
   const fetchUpcomingMovies = async (page) => {
     const response = await fetch(
-      `https://api.themoviedb.org/3/movie/upcoming?api_key=29a5360b3d6d05d01218ccd685d1210f&language=en-US&page=${page}&region=US`
+      `https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.REACT_APP_KEY}&language=en-US&page=${page}&region=US`
     );
     const data = await response.json();
     return data.results;
@@ -36,7 +37,7 @@ function App() {
   const handleSearch = (e) => {
     e.preventDefault();
 
-    const apiSearch = `https://api.themoviedb.org/3/search/movie?api_key=29a5360b3d6d05d01218ccd685d1210f&query=${term}&include_adult=false&language=en-US&page=1`;
+    const apiSearch = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_KEY}&query=${term}&include_adult=false&language=en-US&page=1`;
 
     fetch(apiSearch)
       .then(response => response.json())
@@ -78,7 +79,7 @@ function App() {
     
     const handleSearchPagination = () => {
 
-      const apiSearch = `https://api.themoviedb.org/3/search/movie?api_key=29a5360b3d6d05d01218ccd685d1210f&query=${term}&include_adult=false&language=en-US&page=${searchCurrentPage}`;
+      const apiSearch = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_KEY}&query=${term}&include_adult=false&language=en-US&page=${searchCurrentPage}`;
 
       fetch(apiSearch)
         .then(response => response.json())

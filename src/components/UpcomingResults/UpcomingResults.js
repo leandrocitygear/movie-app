@@ -6,7 +6,7 @@ function UpcomingResults({ upcomingMovies}) {
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   const handleCardClick = async (movieId) => {
-    const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=29a5360b3d6d05d01218ccd685d1210f&language=en-US`);
+    const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${process.env.REACT_APP_KEY}&language=en-US`);
     const data = await response.json();
     if (data.results && data.results.length > 0) {
       const trailerKey = data.results[0].key;
